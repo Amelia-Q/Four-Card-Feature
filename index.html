@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Four card feature section</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      main {
+        width: 400px;
+        margin: auto;
+        font-family: "Poppins", sans-serif;
+        color: #4d4f62;
+      }
+
+      .promo {
+        text-align: center;
+        /* width: 400px; */
+        margin: auto;
+        padding-top: 50px;
+        margin-bottom: 80px;
+      }
+
+      .promo > h1 {
+        font-weight: 200;
+        margin-bottom: -20px;
+      }
+
+      .promo > h2 {
+        font-weight: 600;
+        font-size: 2em;
+      }
+
+      .card {
+        border-block-start: 4px solid;
+        border-radius: 5px;
+        box-shadow: 0px 15px 30px -11px rgba(63, 70, 78, 0.5);
+        /* width: 400px; */
+        padding: 0px 20px 20px 20px;
+        margin: auto;
+        margin-bottom: 30px;
+      }
+
+      .card h3 {
+        font-size: 25px;
+      }
+
+      .card > p {
+        font-weight: 300;
+      }
+
+      .supervisor {
+        border-block-start-color: #00c8c8;
+      }
+
+      .team-builder {
+        border-block-start-color: #ff637b;
+      }
+
+      .karma {
+        border-block-start-color: #fdbf00;
+      }
+
+      .calculator {
+        border-block-start-color: #377fd2;
+      }
+
+      .card-img {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+      }
+
+      @media screen and (min-width: 1100px) {
+        .main {
+          width: 80%;
+        }
+
+        .card-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .inner-container {
+          margin: 40px;
+        }
+
+        .card {
+          min-width: 300px;
+
+          /* vertical-align: middle; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="promo">
+        <h1>Reliable, efficient delivery</h1>
+        <h2>Powered by Technology</h2>
+        <p>
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+
+      <div class="card-container">
+        <div>
+          <div class="card single supervisor">
+            <h3>Supervisor</h3>
+            <p>Monitors activity to identify project roadblocks</p>
+            <div class="card-img">
+              <img src="./images/icon-supervisor.svg" alt="Supervisor" />
+            </div>
+          </div>
+        </div>
+        <div class="inner-container">
+          <div class="card inner team-builder">
+            <h3>Team Builder</h3>
+            <p>
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <div class="card-img">
+              <img src="./images/icon-team-builder.svg" alt="Team builder" />
+            </div>
+          </div>
+          <div class="card inner karma">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <div class="card-img">
+              <img src="./images/icon-karma.svg" alt="Karma" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card single calculator">
+            <h3>Calculator</h3>
+            <p>
+              Uses data from past projects to provide better delivery estimates
+            </p>
+            <div class="card-img">
+              <img src="./images/icon-calculator.svg" alt="Calculator" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
